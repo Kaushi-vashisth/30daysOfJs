@@ -1,92 +1,153 @@
-// Operators
-// Tasks/Activities:
 
-// Activity 1: Arithmetic Operations
+//Activity 1: Arithmatic operator
+ 
+  //Task 1: ADD
 
-// Task 1: Write a program to add two numbers and log the result to the console.
-let num1=2;
-let num2=3;
-let sum=num1+num2;
-console.log(sum); //output 5
+  let x = 8;
+  let y = 2; 
+  console.log( x+ y) ;   //OUTPUT  10
 
-// Task 2: Write a program to subtract two numbers and log the result to the console.
-let diff=num2-num1;
-console.log(diff);//output 1
+  //Task 2: SUBTRACT
+  x= 8 ;
+  y= 2;
+  console.log( x - y) ;   //OUTPUT 6
 
-// Task 3: Write a program to multiply two numbers and log the result to the console.
-let mul=num2*num1;
-console.log(mul);//output 6
+  //Task 3: MULTIPLY
 
-// Task 4: Write a program to divide two numbers and log the result to the console.
-let div=num2/num1;
-console.log(div);//output 1.5
+  x = 8;
+  y = 2;
+  console.log(x*y) ;     //output 16
 
-// Task 5: Write a program to find the remainder when one number is divided by another and log the result to the console.
-let rem=num2%num1;
-console.log(rem);//output 1
+  //Task 4 : DIVIDE
+  x = 6;
+  y = 2;
+  console.log(x/y) ;    //Output  3
+
+  //Task 5 : remainder
+  x = 6;
+  y =2;
+  console.log(x%y) ;  //output :Remainder of x/y = 0
+
+//Activity 2: ASSIGNMENT OPERATION
+
+ //Task 6: Use the += operator to add a number to variable and log the result to console.
+
+ let a= 1;   // a+=b indicates a= a+b.
+ a+=2;
+ console.log(a) ;   //OUTPUT  a= 3 
+
+ //Task 7: Use the += operator to add a number to variable and log the result to console.
+
+ let b = 4;
+ b-=2;
+ console.log(b) ;    //OUTPUT 2
+
+//ACTIVITY 3: COMPARISON OPERATOR
+
+ //Task 8: write a program to compare two numbers using < and > operator and log the result to console.
+
+ x = 9;
+ y =3 ;
+
+ console.log("Greater than : " , x>y) ;  //OUTPUT : Greater than :  true
+ 
+ console.log("Smaller than : " , x<y) ;  //OUTPUT :Smaller than :  false
+
+ //Task 9 :  write a program to compare two numbers using <= and >= operator and log the result to console.
+
+ console.log(x>=y) ; //OUTPUT  true
+ console.log(x<=y) ; //OUTPUT   false
+
+ //Task 10 : write a program to compare two numbers using == and === operator and log the result to console.
+ 
+ x=5;
+ y =5;
+ console.log( x==y) ;          //OUTPUT true
+ console.log( x===y) ;        //OUTPUT  true
+
+//Actvity 4 : LOGICAL OPERATOR 
+
+ //Task 11 : Write a program that uses && operator to combine two conditions and log the result to console.
+
+  x =66;
+  y =99 ;
+  a = 77 ;
+  b =88 ; 
+  console.log( (x< y) &&(a<b )) ; // Output : true
+
+ //Task 12 : Write a program that uses || operator to combine two conditions and log the result to console.
+    
+  console.log((x< y) ||(a>b)) ; // OUTPUT : true
+
+ //Task 13 : Write a program that uses ! operator to negate the condition and log the result to console.
+  
+  console.log(!(x<=y)) ; //OUTPUT : false
+
+//ACTIVITY 5 : TERNARY OPERATOR 
+  
+ // Task 14 : write a program that uses ternary operator to check if a number is positive or negative and log the result to console.
+  
+  let num = -7 ;
+  let result  = (num>=0 ? "positive" : "negative" ) ; 
+  console.log(" number is :" , result) ; //OUTPUT :  number is : negative
+
+//FEATURE REQUEST :
+// 1. Arithmetic operations script
+
+let p = 5;
+
+console.log(p + 2);
+
+console.log(p - 3);
+
+console.log(p * 3);
+
+console.log(p / 3);
+
+console.log( p % 3);
+
+console.log(++p);
+
+console.log(--p);
+
+console.log( p ** 3);
+
+//output
+// Addition: p + 2 =  7
+// Subtraction: p - 3 = 2
+// Multiplication: p * 3 = 15
+// Division: p / 3 = 1.6666666666666667
+// Remainder: p % 3 = 2
+// Increment: ++p = 6
+// Decrement: --p = 5
+// Exponentiation: p ** 3 = 125
 
 
-// Activity 2: Assignment Operators
+// 2. Comparison and logical operators script
 
-// Task 6: Use the += operator to add a number to a variable and log the result to the console.
-num1+=3
-console.log(num1); //output 5 (now num1 is 2+3=5)
+// equal to operator                        
+console.log( 3 == 3); //  true
 
-// Task 7: Use the -= operator to subtract a number from a variable and log the result to the console.
-num2-=1;
-console.log(num2);//output 2 (now num2 is 3-1=2)
+// not equal operator
+console.log( 3 != 3);  //  false
 
-// Activity 3: Comparison Operators
+// strictly equal to operator
+console.log( 2 === '2');  //  false
 
-// Task 8: Write a program to compare two numbers using > and < and log the result to the console.
-console.log(num1>num2); //output true
-console.log(num1<num2); //output false
+// greater than operator
+console.log(3 > 5);  // false
 
-// Task 9: Write a program to compare two numbers using >= and <= and log the result to the console.
-console.log(num1>=num2); //output true
-console.log(num1<=num2); //output false
+// less than operator
+console.log( 3 < 5);  //  true
 
-// Task 10: Write a program to compare two numbers using == and === and log the result to the console.
-let numstr='2';
-console.log(num2==numstr); //output true
-console.log(num2===numstr);//output false
+// logical AND
+console.log((n < 5) && (n > 0));  // false
 
-// Activity 4: Logical Operators
+// logical OR
+console.log((n > 2) || (n > 5));  // true
 
-// Task 11: Write a program that uses the && operator to combine two conditions and log the result to the console.
+// logical NOT
+console.log(!(n == 3));  // true
 
-if(num1==1 && num2==2)
-    console.log("If condition met"); // will not excecute as if is false 
-else
-    console.log("Else condition met"); // output: Else condition met
-
-// Task 12: Write a program that uses the || operator to combine two conditions and log the result to the console.
-if(num1==1 ||  num2==2)
-    console.log("If condition met"); // output: If condition met
-else
-    console.log("Else condition met"); //will not excecute as if is true
-
-// Task 13: Write a program that uses the ! operator to negate a condition and log the result to the console.
-if(num1!=1)
-    console.log("num1 is not equal to 1"); //output: num1 is not equal to 1
-
-// Activity 5: Ternary Operator
-
-// Task 14: Write a program that uses the ternary operator to check if a number is positive or negative and log the result to the console.
-num1>0?console.log("num1 is positive"):console.log("num1 is negative"); //output num1 is positive
-
-
-// Feature Request:
-
-// Arithmetic Operations Script: Write a script that performs basic arithmetic operations (addition, subtraction, multiplication, division, remainder) on two numbers and logs the results.
-
-// Same as activity 1
-
-// Comparison and Logical Operations Script: Create a script that compares two numbers using different comparison operators and combines conditions using logical operators, logging the results.
-
-// same as activity 2 and 3
-
-
-// Ternary Operator Script: Write a script that uses the ternary operator to determine if a number is positive or negative and logs the result.
-
-// Same as activity 4
+// 3. ternary operator script
+n1>0 ? console.log(n1,"is +ve") : console.log(n1,"is -ve");  //output: 10 is positive
