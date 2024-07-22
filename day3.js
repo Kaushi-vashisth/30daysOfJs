@@ -10,7 +10,6 @@ let age = 30;
 if (age >= 18) console.log("eligible to vote");
 else console.log("not eligible to vote");//Output-eligible to vote
 
-
 //Activity 2: Nested If-Else Statements
 //Task 3: Write a program to find the largest of three numbers using nested if-else statements.
 let a = 12;
